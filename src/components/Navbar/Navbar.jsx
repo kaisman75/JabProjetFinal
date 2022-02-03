@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app__logo" />
+       <a href='#home'><img src="/images/JabLOG.png" alt="app__logo" /></a> 
         </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
@@ -20,7 +20,7 @@ const Navbar = () => {
       </ul>
 
          <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Registration in Academi</a>
+        <a href="#newsLetter" className="p__opensans">Registration in Academi</a>
         </div>
         <div />
       
