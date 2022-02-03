@@ -28,17 +28,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     list-style: none;
 }
 
 .app__navbar-links li {
-    margin: 0 1rem;
     cursor: pointer;
+    letter-spacing: 2px;
+    margin: 0 30px;
+    width: 82px;
+    text-align: center;
 }
 
 .app__navbar-links li:hover {
     color: var(--color-grey);
+    background-color: #000;
+    opacity: 0.4;
+    border-radius: 4px;
+    
 }
 
 .app__navbar-login {

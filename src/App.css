@@ -68,11 +68,12 @@
     border-radius: 6px;
 }
 .custom__button:hover{
-  background-color: var(--color-green);
+  background-color: rgb(48, 168, 84);
+  color:#fff;
 }
 .p__cormorant {
   font-family: var(--font-base);
-  color: var(--color-white);
+  color: black;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -109,6 +110,7 @@
   .p__cormorant {
     font-size: 37px;
     line-height: 67px;
+   
   }
 
   .p__opensans {

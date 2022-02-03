@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SubHeading } from '../../components';
-import { images } from '../../constants';
+
 
 const FindUs = () => (
   <div className="app__bg app__wrapper section__padding" id="contact">
@@ -17,9 +17,9 @@ const FindUs = () => (
       <button type="button" className="custom__button" style={{ marginTop: '2rem' }}>Visit Us</button>
     </div>
 
-    <div className="app__wrapper_img">
-      <img src={images.findus} alt="finus_img" />
-    </div>
+   
+    
+    
   </div>
 );
 
