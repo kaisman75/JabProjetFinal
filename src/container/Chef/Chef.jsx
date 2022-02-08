@@ -1,14 +1,25 @@
-import React from 'react';
-
+import React,{useState} from 'react';
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
+import { Modal } from 'react-responsive-modal';
+import "react-responsive-modal/styles.css";
 import './Chef.css';
 
-const Chef = () => (
+const Chef = () => {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
+
+  return(
+  <> 
   <div className="app__bg app__wrapper section__padding">
-    <div className="app__wrapper_img app__wrapper_img-reverse">
-      <img src="images/jab6.jpg" alt="chef_image" />
-    </div>
+    <div className="app__wrapper_img app__wrapper_img-reverse"> 
+      <a onClick={onOpenModal}>
+       <img src='/images/jab6.jpg'/>
+      </a>
+    
     <div className="app__wrapper_info">
       <SubHeading title="Chef's word" />
       <h1 className="headtext__cormorant">What we believe in</h1>
@@ -28,6 +39,12 @@ const Chef = () => (
       </div>
     </div>
   </div>
-);
+  </div> 
+      <Modal open={open} onClose={onCloseModal} center>
+        <img src='/images/jab6.jpg' />
+      </Modal>
+  </> 
+)
+  };
 
 export default Chef;
