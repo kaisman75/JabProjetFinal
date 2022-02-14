@@ -40,7 +40,7 @@ const Chef = () => {
     </div>
   </div>
   </div> 
-      <Modal open={open} onClose={onCloseModal} center>
+       <Modal open={open} onClose={onCloseModal} center>
         <img src='/images/jab6.jpg' />
       </Modal>
   </> 

@@ -13,7 +13,7 @@ const Imagemodal= ({imgSrc}) => {
  
 
   return (
-    < >
+    <>
       <a onClick={onOpenModal}>
        <img src={imgSrc}/>
       </a>

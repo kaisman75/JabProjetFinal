@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels,Entrainement} from './container';
 import { Navbar } from './components';
 import './App.css';
 
 const App = () => (
-  <div>
+  <div className='App'>
     <Navbar />
     <Header />
     <AboutUs />
-    <SpecialMenu />
+    <Entrainement/>
     <Chef />
     <Intro />
     <Laurels />

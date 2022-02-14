@@ -1,3 +1,9 @@
+.App{
+  width:100vw;
+  height: 100vh;
+}
+
+
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -12,7 +18,7 @@
   background: url('./assets/bg.png');
   background-position: center;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -20,13 +26,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-direction: row;
   min-height: 100vh;
 }
 
 .app__wrapper_info {
   flex: 1;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -34,12 +40,10 @@
 }
 
 .app__wrapper_img {
-  flex: 1;
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 

@@ -1,0 +1,16 @@
+
+.app_entrainement{
+
+  width:100vw;
+  height: 100vh;
+  background-color: var( --color-black);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap:20px;
+}
+.app__header1 {
+  text-align: center;
+  width: 50%;
+  margin: 30px auto;
+}
