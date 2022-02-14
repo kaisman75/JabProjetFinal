@@ -2,7 +2,7 @@
 .app_entrainement{
 
   width:100vw;
-  height: 100vh;
+  height:100vh;
   background-color: var( --color-black);
   padding: 50px;
   display: grid;
@@ -13,4 +13,10 @@
   text-align: center;
   width: 50%;
   margin: 30px auto;
+}
+@media screen and (max-width: 1150px) {
+  .app_entrainement{
+    height: auto;
+  }
+  
 }
