@@ -6,11 +6,10 @@ import { images } from '../../constants';
 import './Gallery.css';
 
 const Gallery = () => {
+  const Images=[images.img1, images.img2, images.img3, images.img4, images.img5,images.img6,images.img7,images.img8,images.img9,images.img10,images.img11,images.img12,images.img13,images.img14,images.img15,images.img16,images.img17,images.img18,images.img19,images.img20,images.img21];
   const [open, setOpen] = useState(false);
   const[srcimage,setSrcImage]=useState();
-  const onOpenModal = () => {
-   
-  }
+  
   const onCloseModal = () => setOpen(false);
   const scrollRef = React.useRef(null);
 
@@ -34,7 +33,7 @@ const Gallery = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.img1, images.img2, images.img3, images.img4, images.img5].map((image, index) => (
+          {Images.map((image, index) => (
                <>
                <a onClick={()=>{ setOpen(true);
     setSrcImage(image)}} className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>

@@ -96,7 +96,12 @@
     color: var(--color-white);
 }
 .react-responsive-modal-modal{
-    width: 100%;
+    width: 80%;
+    
+}
+.react-responsive-modal-modal img{
+    width:80%;
+    margin: auto;
 }
 @media screen and (min-width: 2000px) {
     .app__gallery-content button {
@@ -129,6 +134,12 @@
     .app__gallery {
         padding: 4rem 0 4rem 4rem;
     }
+    .react-responsive-modal-modal{
+        width: 100%;
+        height: 80%;
+       margin: auto; 
+    }
+    
 }
 
 @media screen and (max-width: 650px) {
