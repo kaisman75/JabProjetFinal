@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./FindUs.css"
 import { SubHeading } from '../../components';
 
 

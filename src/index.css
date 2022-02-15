@@ -20,9 +20,7 @@
   margin: 0;
   scroll-behavior: smooth;
 }
-body{
-  width:100%;
-}
+
 a {
   color: unset;
   text-decoration: none;

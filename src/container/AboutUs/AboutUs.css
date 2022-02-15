@@ -27,7 +27,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
 }
 
 .app__aboutus-content_knife {
@@ -35,7 +35,7 @@
 }
 
 .app__aboutus-content_knife img {
-    height: 910px;
+  
     width: 350px;
     height: 333px;
 }
@@ -56,9 +56,7 @@
 }
 
 @media screen and (min-width: 2000px) {
-    .app__aboutus-content_knife img {
-        height: 1110px;
-    }
+  
 
     .app__aboutus-content_about p,
     .app__aboutus-content_history p {
@@ -66,11 +64,11 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width:1150px) {
     .app__aboutus-content {
         flex-direction: column;
     }
-
+   
     .app__aboutus-content_knife {
         margin: 4rem 0;
     }

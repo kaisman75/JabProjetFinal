@@ -1,11 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-
+import { Modal } from 'react-responsive-modal';
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Gallery.css';
 
 const Gallery = () => {
+  const [open, setOpen] = useState(false);
+  const[srcimage,setSrcImage]=useState();
+  const onOpenModal = () => {
+   
+  }
+  const onCloseModal = () => setOpen(false);
   const scrollRef = React.useRef(null);
 
   const scroll = (direction) => {
@@ -28,13 +34,21 @@ const Gallery = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
-            <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
-            </div>
-          ))}
+          {[images.img1, images.img2, images.img3, images.img4, images.img5].map((image, index) => (
+               <>
+               <a onClick={()=>{ setOpen(true);
+    setSrcImage(image)}} className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
+               <img src={image} alt="gallery_image" />
+               </a>
+                </>
+               
+           
+          ))} 
+               <Modal className="app__gallery-img" open={open} onClose={onCloseModal} center>
+               <img src={srcimage} alt="gallery_image"  />
+               </Modal>
         </div>
+            
         <div className="app__gallery-images_arrows">
           <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
           <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />

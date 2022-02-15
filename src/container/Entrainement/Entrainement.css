@@ -9,6 +9,9 @@
   grid-template-columns: repeat(5,1fr);
   grid-gap:20px;
 }
+.app_entrainement p{
+  font-size: 30px;
+}
 .app__header1 {
   text-align: center;
   width: 50%;

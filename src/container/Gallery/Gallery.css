@@ -95,7 +95,9 @@
 .gallery__arrow-icon:hover {
     color: var(--color-white);
 }
-
+.react-responsive-modal-modal{
+    width: 100%;
+}
 @media screen and (min-width: 2000px) {
     .app__gallery-content button {
         margin-top: 2rem;
