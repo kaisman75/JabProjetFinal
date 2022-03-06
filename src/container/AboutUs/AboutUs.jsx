@@ -1,17 +1,23 @@
-import React,{useEffect} from 'react';
+import React,{useState,useEffect} from 'react';
 import { images } from '../../constants';
 import './AboutUs.css';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
-
+import "react-responsive-modal/styles.css";
 
 
 const AboutUs = () => {
+  const aboutText="La jeunesse Atletique bougatfa dont le siege social ce trouve a bellvue apris la releve, apres l'independance du club sportif de bellvue et conserne plusieur cartiers popilaires et residentiel telque borj ali raes ,dubosville ,kharouba , lacagna,elwardia,el kabaria,jbeljloudla... jab posséde une salle de basket-ball couvert et homologuée par la fédération tunissienne de basket-ball."
+  const textArray=aboutText.split("").slice(0,120)
+  const allText=aboutText.split("").slice(0,)
+  const[text,setText]=useState(textArray)
   useEffect(()=>{
     <Fade/>;
     <Jump/>
   })
-
+const handleAllText=()=>{
+  text.length<=120?setText(allText):setText(textArray)
+}
 return(
 <div className="app__aboutus app__bg flex__center section__padding" id="about">
     <div className="app__aboutus-overlay flex__center">
@@ -23,8 +29,8 @@ return(
       <div className="app__aboutus-content_about">
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" target="_blank"/>
-        <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-        <button type="button" className="custom__button">Know More</button>
+        <text className="p__opensans">{text}....</text>
+        <button type="button" className="custom__button" onClick={handleAllText}>Know More</button>
       </div>
      </Fade>
       <Jump duration="2500">

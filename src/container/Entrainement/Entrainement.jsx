@@ -2,7 +2,7 @@ import React from 'react'
 import './Entrainement.css' 
 import { Label } from '../../components'
 import  Data  from './Data'
-
+import "react-responsive-modal/styles.css";
 
 
 const Entrainement = () => {
