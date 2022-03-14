@@ -7,6 +7,7 @@
     position: absolute;
     inset: 0;
     height: 100%;
+   
 }
 
 .app__aboutus-overlay img {
@@ -16,16 +17,16 @@
 }
 
 .app__aboutus-content {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 2;
 }
 
 .app__aboutus-content_about {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     text-align: left;
 }
@@ -74,9 +75,27 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
+    .app__aboutus{
+        
+       padding: 0;
+      
+       
+
+    }
+    .app__aboutus-overlay {
+        height: 100vh;
+        display: flex;
+    }
     .app__aboutus-overlay img {
         width: 80%;
-        height: 100%;
+        height: 320px;
+    }
+    ..app__aboutus-content{
+        width: 100vw;
+        height: 100vh;
+    }
+    .app__aboutus{
+        margin: 0;
     }
 }

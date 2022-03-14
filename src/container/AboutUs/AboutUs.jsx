@@ -3,34 +3,44 @@ import { images } from '../../constants';
 import './AboutUs.css';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
-import "react-responsive-modal/styles.css";
+
 
 
 const AboutUs = () => {
-  const aboutText="La jeunesse Atletique bougatfa dont le siege social ce trouve a bellvue apris la releve, apres l'independance du club sportif de bellvue et conserne plusieur cartiers popilaires et residentiel telque borj ali raes ,dubosville ,kharouba , lacagna,elwardia,el kabaria,jbeljloudla... jab posséde une salle de basket-ball couvert et homologuée par la fédération tunissienne de basket-ball."
+  const aboutText="la Jeunesse Athlétique Bougatfa dont le siège social sise à Bellevue a pris la relève, après l'indépendance, du club Sportive de Bellevue et la Guauloise de belle vue en 1926   concerne plusieurs quartiers populaires et résidentiels tels que Dubosville, Kharouba, Bordj Ali Rais, La Cagna, Elouardia, Kabaria, Ibn Sina..et Bellevue.   Elle possède une salle couverte Homologuée par la fédération Tunisienne Basket-ball.   Elle est spécialisée en Basket Ball et les résultats qu'elle a enregistrées, depuis sa création, grâce à un encadrement des responsables, a permis de voir le nombre de ses adhérents s'accroître d'années en années." 
+
+
+  
+
   const textArray=aboutText.split("").slice(0,120)
   const allText=aboutText.split("").slice(0,)
   const[text,setText]=useState(textArray)
+  const textHistoir="La Jeunesse Athlétique Bougatfa, avec les moyens du bord et le bénévolat de ses dirigeants, a réussi à remporter plusieurs titres nationaux au niveau des séniors garçons et Filles et des jeunes.  Elle a accédé en division Nationale ( Séniors Garçons ) en 1969-70 et a remportée la coupe de Tunisie de la catégorie en 1973-74.Elle a , par ailleurs remportée le championnat de Tunisie ( 1984-85 ),la coupe de Tunisie (1985-86 ) et la coupe de Tunisie ( 1986-87 ) en seniors Filles.d'autres titres remportés par les catégories les plus jeunes sinon un classement très honorables ont été réalisés."
+  const textArray2=textHistoir.split("").slice(0,120)
+  const allText2=textHistoir.split("").slice(0,)
+  const[text2,setText2]=useState(textArray2)
   useEffect(()=>{
     <Fade/>;
     <Jump/>
   })
-const handleAllText=()=>{
+const handleAllText1=()=>{
   text.length<=120?setText(allText):setText(textArray)
 }
+const handleAllText2=()=>{
+  text2.length<=120?setText2(allText2):setText2(textArray2)
+}
 return(
-<div className="app__aboutus app__bg flex__center section__padding" id="about">
+<div className="app__wrapper app__aboutus app__bg flex__center section__padding" id="about">
     <div className="app__aboutus-overlay flex__center">
-      <img src={images.G} alt="G_overlay" />
+     
     </div>
     
     <div className="app__aboutus-content flex__center">
-      <Fade left duration="2500">
+      <Fade right duration="2500">
       <div className="app__aboutus-content_about">
-        <h1 className="headtext__cormorant">About Us</h1>
-        <img src={images.spoon} alt="about_spoon" className="spoon__img" target="_blank"/>
-        <text className="p__opensans">{text}....</text>
-        <button type="button" className="custom__button" onClick={handleAllText}>Know More</button>
+        <h1 className="headtext__cormorant ">A Propos</h1>
+        <p className="p__opensans">{text}....</p>
+        <button type="button" className="custom__button" onClick={handleAllText1}>Lire Encore...</button>
       </div>
      </Fade>
       <Jump duration="2500">
@@ -40,12 +50,11 @@ return(
      
       </div>
       </Jump>
-     <Fade right duration="2500">
+     <Fade left duration="2500">
       <div className="app__aboutus-content_history">
-        <h1 className="headtext__cormorant">Our History</h1>
-        <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-        <button type="button" className="custom__button">Know More</button>
+        <h1 className="headtext__cormorant">Notre Histoire</h1>
+        <p className="p__opensans">{text2}....</p>
+        <button type="button" className="custom__button" onClick={handleAllText2}>Lire Encore...</button>
       </div>
       </Fade>
     </div>

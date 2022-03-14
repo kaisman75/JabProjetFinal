@@ -20,8 +20,7 @@ const Newsletter = () => {
   };
   return(
   <div className="app__newsletter" id="newsLetter">
-    <div className="app__newsletter-input-heading">
-     <SubHeading title="Newsletter" />
+    <div className="app__newsletter-heading">
       <h1 className="headtext__cormorant">Subscribe To Our Academie</h1>
     </div>
 
