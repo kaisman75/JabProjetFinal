@@ -7,6 +7,7 @@
     background-color: #5EB719;
     box-shadow: -2px 11px 19px -4px #282727;
     position: fixed;
+    z-index: 100;
 }
 .app_nav-logo{
     position: absolute;
@@ -44,13 +45,37 @@ cursor: pointer;
 .app__nav-link  a:hover{
   border-bottom:2px solid #282727;
 }
-/*.navbar-light .navbar-brand{
-    color:white; 
-    font-size: 30px;
+.app__nav-btn{
+position: absolute;
+width: 162px;
+height: 38px;
+left: 1645px;
+top: 20px;
+background: linear-gradient(90deg, #514747 0%, #90B149 100%);
+box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
-.navbar-light .navbar-nav .nav-link{
-    color:white;
-}
-.navbar-collapse{
-    text-align: center;
-}*/
+.app__nav-btn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .app__nav-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

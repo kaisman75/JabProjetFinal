@@ -17,8 +17,8 @@ const navbar = () => {
       <li><a link="#PALMARES">PALMARES</a></li>
     </ul>
      
-
-    
+  
+    <button className='app__nav-btn'>Academie</button>
 
   
    

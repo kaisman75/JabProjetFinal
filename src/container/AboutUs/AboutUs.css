@@ -1,22 +1,39 @@
 .app__aboutus {
-    position: relative;
-     height: 100%;
-}
-
-.app__aboutus-overlay {
     position: absolute;
-    inset: 0;
-    height: 100%;
+    width: 100vw;
+    height: 923px;
+    left: 2px;
+    top: 1019px;
+    background: url("../../assets/bg.png");
    
 }
 
-.app__aboutus-overlay img {
-    width: 391px;
-    height:120px;
-    z-index: 0;
+
+
+.app__aboutus-img {
+    position: absolute;
+    width: 258px;
+    height: 267px;
+    left: 899px;
+    top: 380px;
+    background: url("../../assets/ball.png");
+    background-size: contain;
+    background-position-y: 4px;
+}
+.app__about-img-Ellipse{
+    position: absolute;
+    width: 327px;
+    height: 43px;
+    left: 869px;
+    top: 591px;
+    border-radius: 50%;
+    background: rgba(148, 148, 148, 0.28);
+    mix-blend-mode: exclusion;
+    border: 44px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-.app__aboutus-content {
+/*.app__aboutus-content {
     width: 100vw;
     height: 100vh;
     z-index: 2;
@@ -39,7 +56,7 @@
   
     width: 350px;
     height: 333px;
-}
+} */
 
 .app__aboutus-content_history {
     flex: 1;
