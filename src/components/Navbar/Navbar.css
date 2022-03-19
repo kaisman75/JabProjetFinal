@@ -1,4 +1,6 @@
 .app__Navbar{
+   
+    justify-content: center;
     height: 79px;
     width: 100%;
     left: 0px;
@@ -7,10 +9,25 @@
     background-color: #5EB719;
     box-shadow: -2px 11px 19px -4px #282727;
     position: fixed;
+    flex: 1;
+    z-index: 100;
 }
-.app_nav-logo{
-    position: absolute;
-    width: 103px;
+.app__nav-links{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.app_nav-links-logo{
+    display: flex;
+    width: 100%;
     height: 69px;
     font-family: 'Roboto';
     font-style: normal;
@@ -18,39 +35,139 @@
     font-size: 56px;
     line-height: 66px;
     color: #000000;
-    top: 5px;
-    left: 23px;
-
+    flex:1;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
-.app_nav-logo:hover{
+.app_nav-links-logo p{
+ margin: 0rem 4rem;
+}
+.app_nav-links-logo p:hover{
     cursor: pointer;
 }
-.app__nav-link{
-position: absolute;
-width: 426px;
-height: 21px;
-left: 845px;
-top: 25px;
-list-style: none;
+
+.app__navbar-links_container{
 display: flex;
+width: 40%;
+height: 100%;
+align-items: center;
+flex:1;
 }
-.app__nav-link li{
+
+.app__navbar-links_container p{
+flex: 1;
+list-style: none;
 width: 105px;
 height: 21px;
 margin-right: 20px;
 text-align: center;
+}
+.app__navbar-links_container p a {
+  cursor: pointer;
+}
+.app__nav-links-academie{
+  position: relative;
+ flex:1;
+ display: flex;
+ justify-content: space-around;
+}
+.app__nav-links-academie-btn{
+ position: relative;
+width: 162px;
+height: 38px;
+
+top: -3px;
+color :white;
+background: linear-gradient(90deg, #514747 0%, #90B149 100%);
+box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+transition: width 0.5s;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
 cursor: pointer;
 }
-.app__nav-link  a:hover{
-  border-bottom:2px solid #282727;
+
+.app__nav-links-academie-btn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .app__nav-links-academie-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+.app__navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
 }
-/*.navbar-light .navbar-brand{
-    color:white; 
-    font-size: 30px;
+.app__navbar-menu_container{
+  display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
 }
-.navbar-light .navbar-nav .nav-link{
-    color:white;
+.app__navbar-menu_container p {
+  margin: 1rem 0;
 }
-.navbar-collapse{
-    text-align: center;
-}*/
+.app__navbar-menu_container-academie{
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .app__navbar-links_container {
+      display: none;
+  }
+
+  .app__navbar-menu {
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app__navbar {
+      padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app__navbar {
+      padding: 2rem;
+  }
+
+  .app__nav-links-academie {
+      display: none;
+  }
+
+  .app__navbar-menu_container {
+      top: 20px;
+  }
+
+  .app__navbar-menu_container-academie {
+      display: block;
+  }
+}

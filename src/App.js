@@ -1,6 +1,5 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.css"
- import {Header} from './container';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels,Entrainement} from './container';
 import { Navbar } from './components';
 import './App.css';
 
