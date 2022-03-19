@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <div className='app__Navbar'>
-      <div className='app__nav-links'>
-      <div className='app_nav-links-logo' pnk='#HOME'>
+      <div className='app__navbar-links'>
+      <div className='app__navbar-links-logo' link='#HOME'>
          <p>JAB</p>
       </div>
     <div className='app__navbar-links_container'>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <p><a pnk="#CONTACT">CONTACT</a></p>
           </div>
           <div className="app__navbar-menu_container-academie"> 
-          <button className='app__nav-academie-btn'>ACADEMIE</button>
+          <button className='app__nav-links-academie-btn'>ACADEMIE</button>
           </div>
         </div>
         )}

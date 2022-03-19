@@ -30,34 +30,36 @@ const handleAllText2=()=>{
   text2.length<=120?setText2(allText2):setText2(textArray2)
 }
 return(
-<div className="app__wrapper app__aboutus app__bg flex__center section__padding" id="about">
-    <div className="app__aboutus-overlay flex__center">
-     
-    </div>
+<div className=" app__aboutus " id="about">
+   
     
-    <div className="app__aboutus-content flex__center">
+   {/*  <div className="app__aboutus-content flex__center">
       <Fade right duration="2500">
       <div className="app__aboutus-content_about">
         <h1 className="headtext__cormorant ">A Propos</h1>
         <p className="p__opensans">{text}....</p>
         <button type="button" className="custom__button" onClick={handleAllText1}>Lire Encore...</button>
       </div>
-     </Fade>
-      <Jump duration="2500">
-      <div className="app__aboutus-content_knife flex__center">
-    
-        <img id="idimage" src= "/images/ball.png" alt="about_us"/>
+     </Fade> */}
      
-      </div>
-      </Jump>
-     <Fade left duration="2500">
+      
+        <Jump duration="2500">
+           <div className='app__aboutus-img'></div>   
+       </Jump>
+      <div className='app__about-img-Ellipse'></div>
+     
+       
+     
+     
+     
+     {/* <Fade left duration="2500">
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Notre Histoire</h1>
         <p className="p__opensans">{text2}....</p>
         <button type="button" className="custom__button" onClick={handleAllText2}>Lire Encore...</button>
       </div>
-      </Fade>
-    </div>
+      </Fade> 
+    </div>*/}
   </div>)
   
 };
