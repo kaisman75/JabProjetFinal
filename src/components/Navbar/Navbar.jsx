@@ -11,15 +11,15 @@ const Navbar = () => {
   return (
     <div className='app__Navbar'>
       <div className='app__navbar-links'>
-      <div className='app__navbar-links-logo' link='#HOME'>
+      <div className='app__navbar-links-logo' href='#HOME'>
          <p>JAB</p>
       </div>
     <div className='app__navbar-links_container'>
     
-      <p><a pnk="#HOME">HOME</a></p>
-      <p><a pnk="#A PROPOS">A PROPOS</a></p>
-      <p><a pnk="#PALMARES">PALMARES</a></p>
-      <p><a pnk="#CONTACT">CONTACT</a></p>
+      <p><a href="#HOME">HOME</a></p>
+      <p><a href="#propos">A PROPOS</a></p>
+      <p><a href="#PALMARES">PALMARES</a></p>
+      <p><a href="#CONTACT">CONTACT</a></p>
      
    
     </div>
@@ -33,10 +33,10 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="app__navbar-menu_container">
           <div className="app__navbar-menu_container-links">
-          <p><a pnk="#HOME">HOME</a></p>
-          <p><a pnk="#A PROPOS">A PROPOS</a></p>
-          <p><a pnk="#PALMARES">PALMARES</a></p>
-          <p><a pnk="#CONTACT">CONTACT</a></p>
+          <p><a href="#HOME">HOME</a></p>
+          <p><a href="#A PROPOS">A PROPOS</a></p>
+          <p><a href="#PALMARES">PALMARES</a></p>
+          <p><a href="#CONTACT">CONTACT</a></p>
           </div>
           <div className="app__navbar-menu_container-academie"> 
           <button className='app__nav-links-academie-btn'>ACADEMIE</button>
