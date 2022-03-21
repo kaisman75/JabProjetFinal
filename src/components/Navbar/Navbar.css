@@ -59,6 +59,7 @@ text-align: center;
 }
 .app__navbar-links_container p a {
   cursor: pointer;
+  text-decoration: none;
 }
 .app__nav-links-academie{
   position: relative;
@@ -113,9 +114,8 @@ cursor: pointer;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    
     text-align: center;
-    background: var(--color-footer);
+    background: var(--color-green);
     padding: 2rem;
     position: absolute;
     right: 0;
@@ -127,8 +127,11 @@ cursor: pointer;
 }
 .app__navbar-menu_container p {
   margin: 1rem 0;
+ 
 }
-
+..app__navbar-menu_container  a{
+   text-decoration: none;
+}
 .app__navbar-menu_container-academie{
   display: none;
 }

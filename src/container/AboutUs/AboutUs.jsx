@@ -37,9 +37,11 @@ return(
       
       <div className="app__aboutus-content_about">
       <Fade right duration="2500">
+        <div className='app__about-content-info'>
         <h1 className="headtext__cormorant ">A Propos</h1>
-        <p className="p__opensans">{text}....</p>
+        <p>{text}....</p>
         <button type="button" className="custom__button" onClick={handleAllText1}>Lire Encore...</button>
+        </div>
       </Fade> 
       </div>
      
@@ -53,14 +55,15 @@ return(
        
      
      
-     
+     <div className="app__aboutus-content_history">
      <Fade left duration="2500">
-      <div className="app__aboutus-content_history">
+     <div className='app__about-content-info'>
         <h1 className="headtext__cormorant">Notre Histoire</h1>
-        <p className="p__opensans">{text2}....</p>
+        <p>{text2}....</p>
         <button type="button" className="custom__button" onClick={handleAllText2}>Lire Encore...</button>
       </div>
       </Fade> 
+      </div>
     </div>
   </div>)
   
