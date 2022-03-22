@@ -62,7 +62,8 @@ text-shadow: 16px 18px 4px rgba(0, 0, 0, 0.25);
    
     left: 32px;
     top: 537px;
-    font-family: 'Tajawal';
+    font-family: var( --font-base);
+    color: var( --color-golden);
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
