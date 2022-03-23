@@ -1,3 +1,4 @@
+import { TRUE } from 'node-sass';
 import React,{useState} from 'react';
 import { Modal } from 'react-responsive-modal';
 import './Modal.css'
@@ -14,10 +15,10 @@ const Imagemodal= ({imgSrc}) => {
 
   return (
     <>
-      <a onClick={onOpenModal}>
+      <a onClick={()=>{setOpen(true)}}>
        <img src={imgSrc}/>
       </a>
-      <Modal open={open} onClose={onCloseModal} center>
+       <Modal open={open} onClose={setOpen(false)} center>
         <img src={imgSrc} />
       </Modal>
     </>

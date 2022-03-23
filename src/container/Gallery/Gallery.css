@@ -3,6 +3,7 @@
     text-align: center;
     background: var(--color-black);
     padding: 4rem 0 4rem 6rem;
+    
 }
 
 .app__gallery-content {
@@ -95,12 +96,19 @@
 .gallery__arrow-icon:hover {
     color: var(--color-white);
 }
+.react-responsive-modal-root{
+    position: absolute;
+}
 .react-responsive-modal-modal{
     width: 80%;
     
 }
+.react-responsive-modal-modal{
+    width: 100%;
+    text-align: center;
+}
 .react-responsive-modal-modal img{
-    width:80%;
+    width:100%;
     margin: auto;
 }
 @media screen and (min-width: 2000px) {
