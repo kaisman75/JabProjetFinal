@@ -1,12 +1,13 @@
 .app__video {
+    
     height: 100vh;
     position: relative;
 }
 
 .app__video video {
   
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit:cover;
     width: 100%;
 }
 
@@ -26,4 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width:550px) {
+    .app__video-overlay {
+       
+        background-color: rgba(0,0,0,0.2);
+    }
+    
 }

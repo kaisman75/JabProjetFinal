@@ -57,9 +57,14 @@ height: 21px;
 margin-right: 20px;
 text-align: center;
 }
-.app__navbar-links_container p a {
+a {
   cursor: pointer;
   text-decoration: none;
+  list-style: none;
+
+}
+a:hover{
+  color: aliceblue;
 }
 .app__nav-links-academie{
   position: relative;
@@ -144,9 +149,16 @@ cursor: pointer;
   .app__navbar-menu {
       display: flex;
   }
+  a{
+    font-size: 40px;
+   
+  }
+  .app__navbar-links p{
+    text-align: left;
+   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .app__Navbar {
       padding: 0rem 4rem;
       flex:1
@@ -154,11 +166,14 @@ cursor: pointer;
  .app__navbar-links{
    justify-content: center;
    align-items: center;
+   
  
  }
  .app__navbar-menu svg{
    margin-right: 5px;
  }
+
+ 
 }
 
 @media screen and (max-width: 550px) {

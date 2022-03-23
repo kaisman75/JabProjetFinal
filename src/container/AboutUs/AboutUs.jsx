@@ -30,7 +30,7 @@ const handleAllText2=()=>{
   text2.length<=120?setText2(allText2):setText2(textArray2)
 }
 return(
-<div className="app__aboutus" id="propos">
+<div className="app__about" id="propos">
    
     
      <div className="app__aboutus-content">
@@ -38,9 +38,9 @@ return(
       <div className="app__aboutus-content_about">
       <Fade right duration="2500">
         <div className='app__about-content-info'>
-        <h1 className="headtext__cormorant ">A Propos</h1>
+        <h1 className="headtext__cormorant">A Propos</h1>
         <p>{text}....</p>
-        <button type="button" className="custom__button" onClick={handleAllText1}>Lire Encore...</button>
+        <button type="button" className="app__about-button" onClick={handleAllText1}>Lire Encore...</button>
         </div>
       </Fade> 
       </div>
@@ -60,7 +60,7 @@ return(
      <div className='app__about-content-info'>
         <h1 className="headtext__cormorant">Notre Histoire</h1>
         <p>{text2}....</p>
-        <button type="button" className="custom__button" onClick={handleAllText2}>Lire Encore...</button>
+        <button type="button" className="app__about-button" onClick={handleAllText2}>Lire Encore...</button>
       </div>
       </Fade> 
       </div>
