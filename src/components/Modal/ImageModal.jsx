@@ -1,25 +1,26 @@
-import { TRUE } from 'node-sass';
-import React,{useState} from 'react';
+import React from 'react';
 import { Modal } from 'react-responsive-modal';
-import './Modal.css'
+import 'react-responsive-modal/styles.css';
 
 
+const Imagemodal = ( {srcImg} ) => {
+  const [open, setOpen] = React.useState(false);
 
-const Imagemodal= ({imgSrc}) => {
-
-  const [open, setOpen] = useState(false);
-
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
- 
+  const myRef = React.useRef(null);
 
   return (
-    <>
-      <a onClick={()=>{setOpen(true)}}>
-       <img src={imgSrc}/>
-      </a>
-       <Modal open={open} onClose={setOpen(false)} center>
-        <img src={imgSrc} />
+       <>
+      <div ref={myRef} />
+       <button className="button" onClick={() => setOpen(true)}>
+       <img src={srcImg}/>
+      </button>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        center
+        container={myRef.current}
+      >
+       <img src={srcImg}/>
       </Modal>
     </>
   );
@@ -27,4 +28,4 @@ const Imagemodal= ({imgSrc}) => {
 
 
 export default Imagemodal
-;
+
