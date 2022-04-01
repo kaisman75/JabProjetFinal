@@ -1,41 +1,50 @@
 .app__gallery {
+    width: 100vw;
+    height: 100vh;
     flex-direction: row;
     text-align: center;
     background: var(--color-black);
-    padding: 4rem 0 4rem 6rem;
+   
     
+} 
+.app__galerie_container{
+ display: flex;
+ margin: 0 2rem;
+ flex-direction: row;
+ width: 100vw;
+ 
 }
 
-.app__gallery-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+
+.app__gallery-content{
+    position: relative;
+    flex:1;
     flex-direction: column;
    
-    min-width: 500px;
-    padding-right: 2rem;
 }
 
 .app__gallery-content button {
     margin-top: 1rem;
 }
 
-.app__gallery-images {
-    flex: 1;
+  .app__gallery-images {
+    width: max-content;
     display: flex;
+    flex:1;
     flex-direction: row;
-    max-width: 50%;
-    position: relative;
+    align-items: center;
+    overflow: hidden;
 }
 
 .app__gallery-images_container {
+ 
+    width: max-content;
     display: flex;
     flex-direction: row;
-    width: max-content;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;  
+  
 }
 
 .app__gallery-images_container::-webkit-scrollbar {
@@ -75,14 +84,14 @@
 }
 
 .app__gallery-images_arrows {
-    width: 100%;
+    width: 48vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 0 1rem;
     position: absolute;
-    bottom: 5%;
+   
 }
 
 .gallery__arrow-icon {
@@ -96,21 +105,7 @@
 .gallery__arrow-icon:hover {
     color: var(--color-white);
 }
-.react-responsive-modal-root{
-    position: absolute;
-}
-.react-responsive-modal-modal{
-    width: 80%;
-    
-}
-.react-responsive-modal-modal{
-    width: 100%;
-    text-align: center;
-}
-.react-responsive-modal-modal img{
-    width:100%;
-    margin: auto;
-}
+
 @media screen and (min-width: 2000px) {
     .app__gallery-content button {
         margin-top: 2rem;
@@ -163,4 +158,4 @@
         min-width: 240px;
         height: 320px;
     }
-}
+}  

@@ -1,7 +1,7 @@
 .app__header{
 display: flex;
 flex: 1;
-width:100%;
+width:100vw;
 height:100vh;
 left: 0px;
 width: 100vw;

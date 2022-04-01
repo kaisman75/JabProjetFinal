@@ -6,22 +6,16 @@ import './Modal.css'
 
 
 const Imagemodal= ({imgSrc}) => {
-
-  const [open, setOpen] = useState(false);
-
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
- 
-
+  
   return (
-    <>
-      <a onClick={()=>{setOpen(true)}}>
-       <img src={imgSrc}/>
-      </a>
-       <Modal open={open} onClose={setOpen(false)} center>
-        <img src={imgSrc} />
-      </Modal>
-    </>
+    
+    <div id="myModal" className="modal" style={{imgSrc}?{ display:"block"}:{display:"none"}}>
+    {/*  Modal content  */}
+ <div className="modal-content">
+ <span className="close">&times;</span>
+ <img src={imgSrc} alt="gallery_image"  />
+  </div>  
+</div>   
   );
 };
 
