@@ -1,7 +1,7 @@
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
-
+import awards04 from '../assets/awards04.png'
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
@@ -59,9 +59,10 @@ export default {
   img17,
   img18,
   img19,
+
   img20,
   img21,
-
+  awards04,
   knife,
   logo,
   menu,

@@ -5,15 +5,17 @@ import './App.css';
 
 const App = () => (
   <div className='App'>
+
      <Navbar/>
      <Header/>
      <AboutUs/>
      <Chef/>
      <Intro/>
      <Gallery/>
-    {/* <FindUs/>
+    <FindUs/>
     <Footer/> 
-     <Laurels/> */}
+     <Laurels/>
+
   </div>
 );
 

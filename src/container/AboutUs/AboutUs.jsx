@@ -7,28 +7,17 @@ import Jump from 'react-reveal/Jump';
 
 
 const AboutUs = () => {
-  const aboutText="la Jeunesse Athlétique Bougatfa dont le siège social sise à Bellevue a pris la relève, après l'indépendance, du club Sportive de Bellevue et la Guauloise de belle vue en 1926   concerne plusieurs quartiers populaires et résidentiels tels que Dubosville, Kharouba, Bordj Ali Rais, La Cagna, Elouardia, Kabaria, Ibn Sina..et Bellevue.   Elle possède une salle couverte Homologuée par la fédération Tunisienne Basket-ball.   Elle est spécialisée en Basket Ball et les résultats qu'elle a enregistrées, depuis sa création, grâce à un encadrement des responsables, a permis de voir le nombre de ses adhérents s'accroître d'années en années." 
+  const aboutText="" 
 
 
   
 
-  const textArray=aboutText.split("").slice(0,120)
-  const allText=aboutText.split("").slice(0,)
-  const[text,setText]=useState(textArray)
-  const textHistoir="La Jeunesse Athlétique Bougatfa, avec les moyens du bord et le bénévolat de ses dirigeants, a réussi à remporter plusieurs titres nationaux au niveau des séniors garçons et Filles et des jeunes.  Elle a accédé en division Nationale ( Séniors Garçons ) en 1969-70 et a remportée la coupe de Tunisie de la catégorie en 1973-74.Elle a , par ailleurs remportée le championnat de Tunisie ( 1984-85 ),la coupe de Tunisie (1985-86 ) et la coupe de Tunisie ( 1986-87 ) en seniors Filles.d'autres titres remportés par les catégories les plus jeunes sinon un classement très honorables ont été réalisés."
-  const textArray2=textHistoir.split("").slice(0,120)
-  const allText2=textHistoir.split("").slice(0,)
-  const[text2,setText2]=useState(textArray2)
+ 
   useEffect(()=>{
     <Fade/>;
     <Jump/>
   })
-const handleAllText1=()=>{
-  text.length<=120?setText(allText):setText(textArray)
-}
-const handleAllText2=()=>{
-  text2.length<=120?setText2(allText2):setText2(textArray2)
-}
+
 return(
 <div className="app__about" id="propos">
    
@@ -39,8 +28,7 @@ return(
       <Fade right duration="2500">
         <div className='app__about-content-info'>
         <h1 className="headtext__cormorant">A Propos</h1>
-        <p>{text}....</p>
-        <button type="button" className="app__about-button" onClick={handleAllText1}>Lire Encore...</button>
+        <p>la Jeunesse Athlétique Bougatfa dont le siège social sise à Bellevue a pris la relève, après l'indépendance, du club Sportive de Bellevue et la Guauloise de belle vue en 1926   concerne plusieurs quartiers populaires et résidentiels tels que Dubosville, Kharouba, Bordj Ali Rais, La Cagna, Elouardia, Kabaria, Ibn Sina..et Bellevue.   Elle possède une salle couverte Homologuée par la fédération Tunisienne Basket-ball.   Elle est spécialisée en Basket Ball et les résultats qu'elle a enregistrées, depuis sa création, grâce à un encadrement des responsables, a permis de voir le nombre de ses adhérents s'accroître d'années en années.</p>
         </div>
       </Fade> 
       </div>
@@ -55,15 +43,7 @@ return(
        
      
      
-     <div className="app__aboutus-content_history">
-     <Fade left duration="2500">
-     <div className='app__about-content-info'>
-        <h1 className="headtext__cormorant">Notre Histoire</h1>
-        <p>{text2}....</p>
-        <button type="button" className="app__about-button" onClick={handleAllText2}>Lire Encore...</button>
-      </div>
-      </Fade> 
-      </div>
+    
     </div>
   </div>)
   

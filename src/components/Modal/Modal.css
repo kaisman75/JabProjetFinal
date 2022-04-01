@@ -8,3 +8,14 @@
     justify-content: center;
     align-items: center;
   }
+ .button{
+    height: 75%;
+   
+  }
+  .button img{
+    
+      flex: 1 1;
+      display: flex;
+      width: 557px;
+  
+  }
